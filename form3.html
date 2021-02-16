@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<div>
+		<form oninput="pounds.value=parseFloat(input.value)*2.204, c.value=parseFloat(input.value)/10">
+    Ваш вес в кг <input type="number" id="input" value="50"><br>
+    Вес в фунтах <output name="pounds"></output> <br>
+    Вес в центнерах<output name="c"></output>
+  </form>
+  </table>
+	</div>
+	<div>
+		  <b>Введи два числа получи суму</b> <br> <br>
+		  <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  <input type="number" id="a" value="50">
+  +<input type="number" id="b" value="25">
+  =<output name="x" for="a b"></output>
+</form>
+	</div>
+	<div>
+		<b>Сколько вы хотите зарабатывать?</b>
+		  <form oninput="result.value=input.value">
+    <input type="range" id="input" value="50"><br>
+    <output name="result"></output>
+  </form>
+	</div>
+	<div>
+		Расчитай зп <br>
+		  <form oninput="result.value=hours.value*rate.value*(1-tax.value)">
+    Количество часов<input type="number" id="hours" value="10"><br>
+    Ставка<input type="number" id="rate" value="20"><br>
+    Налог<input type="number" id="tax" value="0.3"><br>
+    Зарплата всего грн <output name="result"></output>
+  </form>
+	</div>
+	<div>
+		<br>
+		<button>Поехали</button>
+		<button>Чисто</button>
+	</div>
+</body>
+</html>
